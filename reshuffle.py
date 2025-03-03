@@ -6,11 +6,11 @@ config.load_kube_config()
 
 v1 = client.CoreV1Api()
 
-# Define resource thresholds
-CPU_OVER_THRESHOLD = 5  # Percentage
-MEMORY_OVER_THRESHOLD = 5  # Percentage
-CPU_UNDER_THRESHOLD = 3  # Percentage
-MEMORY_UNDER_THRESHOLD = 3  # Percentage
+# Define resource thresholds in percentage
+CPU_OVER_THRESHOLD = 5  
+MEMORY_OVER_THRESHOLD = 5  
+CPU_UNDER_THRESHOLD = 3  
+MEMORY_UNDER_THRESHOLD = 3  
 
 # Get node metrics
 def get_node_metrics():
